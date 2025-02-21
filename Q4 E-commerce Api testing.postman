@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8a5aba91-f8aa-463f-9764-df32c2c027fe",
+		"name": "Q4 E-commerce Api testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41472367"
+	},
+	"item": [
+		{
+			"name": "createToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nike react phantom run flyknit 2\",\r\n    \"size\" : \"s\",\r\n    \"color\" : \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/men",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nike react phantom run flyknit 2\",\r\n    \"size\" : \"s\",\r\n    \"color\" : \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/men",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to cart product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token=\"\nsid=s%3AvPa5FDw3VPDqH-WLfDr4tJxnxf3gRJBh.GbWmjR%2B%2BzFh20d5HtLWB6dQnwi8cnYevxAveXm8H%2FFg; __stripe_mid=41526ad4-9dcf-4114-8a34-d63ec0c0429d98c655; __stripe_sid=f859f12a-738e-407e-9625-17b4dc10d16a05a397\"",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nike react phantom run flyknit 2\",\r\n    \"size\" : \"s\",\r\n    \"color\" : \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/men/nike-react-phantom-run-flyknit-2-180",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"men",
+						"nike-react-phantom-run-flyknit-2-180"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "token=\"c86655c3121dca6\"",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Nike react phantom run flyknit 2\",\r\n    \"size\" : \"s\",\r\n    \"color\" : \"black\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/cart/180",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart",
+						"180"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
